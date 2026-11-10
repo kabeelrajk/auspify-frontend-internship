@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 16px;
+  color: #1f2937;
+}
+
+.dashboard {
+  background: #ffffff;
+  width: 100%;
+  max-width: 560px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#city-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#city-input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+#search-form button {
+  padding: 0 20px;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background: #4f46e5;
+}
+
+#message {
+  text-align: center;
+  min-height: 24px;
+  margin-bottom: 8px;
+  color: #6b7280;
+}
+
+#message.error {
+  color: #dc2626;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Current weather */
+.current {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.description {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.details div {
+  background: #f3f4f6;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.details span {
+  display: block;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Forecast */
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.day {
+  background: #eef2ff;
+  text-align: center;
+  padding: 12px 4px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.day .emoji {
+  font-size: 1.6rem;
+  margin: 6px 0;
+}
+
+@media (max-width: 500px) {
+  .forecast {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
