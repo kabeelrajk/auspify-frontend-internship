@@ -22,7 +22,7 @@
 
 ## Screenshots
 
-See the [screenshots](./screenshots) folder.
+See the [Screenshots](./Screenshots) folder.
 
 ## Live Demo
 
